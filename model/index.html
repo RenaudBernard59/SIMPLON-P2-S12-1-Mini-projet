@@ -38,11 +38,36 @@
 <!--MY CODE -------------------------------------------------------------------------->
 <main>
     <section class="container">
-
+        <h1>projets</h1>
+        <article class="col-sm-12">
+            <h2>Projet 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="col-sm-6">
+                <time datetime="2012-12-21">21/12/2012</time>
+            </div>
+            <div class="col-sm-6">
+                <form method="post" action="index.php">
+                    <input type="checklist" name="etat" checked>
+                </form>
+                <form method="post" action="index.php">
+                    <input type="submit" value="Suppr" />
+                </form>
+            </div>
+        </article>
     
-    
-    
-    
+        <section class="col-sm-12">
+            <h2>Nouveau projet</h2>
+            <label for="title">Titre du nouveau projet</label>
+            <input type="text" name="title" id="title" />
+            <br/>
+            <label for="description" >Description du nouveau projet</label>
+            <textarea name="description" id="description">Description du nouveau projet</textarea>
+            <br/>
+            <label for="dateFin" ></label>
+            <input type="date" name="dateFin" id="dateFin" />
+            <br/>
+            <input type="submit" name="Créer projet" />
+        </section>
     
     <section>
 </main>
