@@ -22,8 +22,9 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+<!--MY CODE -------------------------------------------------------------------------->
+<header>
+    <nav class="navbar navbar-inverse" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <a class="navbar-brand" href="#">Mes projets</a>
@@ -34,11 +35,11 @@
         </div><!--END dropdown -->
       </div>
     </nav>
+</header>
 
-<!--MY CODE -------------------------------------------------------------------------->
 <main>
     <section class="container">
-        <h1>projets</h1>
+        <h1>Projets</h1>
         <article class="col-sm-12">
             <h2>Projet 1</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -46,37 +47,45 @@
                 <time datetime="2012-12-21">21/12/2012</time>
             </div>
             <div class="col-sm-6">
-                <form method="post" action="index.php">
-                    <input type="checklist" name="etat" checked>
-                </form>
-                <form method="post" action="index.php">
-                    <input type="submit" value="Suppr" />
-                </form>
+				<form class="form-inline">
+				  <div class="form-group">
+					<label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+					<div class="input-group">
+					  <input type="checkbox" name="etat" checked>
+					</div>
+				  <button type="submit" class="btn btn-primary">OK</button>
+				  <button type="submit" class="btn btn-danger">Suppr</button>
+				  </div>
+				</form>
             </div>
         </article>
-    
-        <section class="col-sm-12">
+
+        <section class="container">
             <h2>Nouveau projet</h2>
-            <label for="title">Titre du nouveau projet</label>
-            <input type="text" name="title" id="title" />
-            <br/>
-            <label for="description" >Description du nouveau projet</label>
-            <textarea name="description" id="description">Description du nouveau projet</textarea>
-            <br/>
-            <label for="dateFin" ></label>
-            <input type="date" name="dateFin" id="dateFin" />
-            <br/>
-            <input type="submit" name="Créer projet" />
+			<div class="form-group">
+		        <label for="title">Titre du nouveau projet</label>
+		        <input type="text" name="title" id="title" class="form-control" />
+            </div>
+			<div class="form-group">
+		        <label for="description" >Description du nouveau projet</label>
+		        <textarea name="description" id="description" class="form-control">Description du nouveau projet</textarea>
+            </div>
+			<div class="form-group">
+		        <label for="dateFin" ></label>
+		        <input type="date" name="dateFin" id="dateFin" class="form-control"/>
+            </div>
+            <button type="submit" class="btn btn-default">Créer projet</button>
         </section>
     
     <section>
 </main>
 
-<!--END MY CODE -------------------------------------------------------------------------->
+<footer class="container">
+<p class="text-center">&copy; Renaud BERNARD - 2017</p>
+</footer>
 
-      <footer>
-        <p>&copy; Renaud BERNARD - 2017</p>
-      </footer>
+
+<!--END MY CODE -------------------------------------------------------------------------->
         <script src="js/vendor/jquery-1.11.2.min.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/vendor/parsley.min.js">$('#form').parsley();</script>
