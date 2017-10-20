@@ -13,15 +13,7 @@ catch (Exception $e)
 ///////////////////BDD CONNECTION///////////////////
 
 //TAB selection
-$reponse = $bdd->query('SELECT * FROM Projets');
-
-while ($donnees = $reponse->fetch())
-{
-    $id = htmlspecialchars($donnees['id']);
-    $title = htmlspecialchars($donnees['title']);
-	$description = htmlspecialchars($donnees['description']);
-	$dateFin = htmlspecialchars($donnees['dateFin']);
-}
+$reponse = $bdd->query('SELECT * FROM Projets ORDER BY ID');
 
 
 /*END Controller*/
