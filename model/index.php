@@ -2,7 +2,15 @@
 include('../vue/header.php');
 
 
-for ($i=1 ; $i <= 5 ; $i++) {
+
+
+
+
+
+
+
+
+for ($i=1 ; $i <= $nbProjects ; $i++) {
 	include('../vue/oneProject.php');
 }
 
