@@ -13,19 +13,15 @@ catch (Exception $e)
 ///////////////////BDD CONNECTION///////////////////
 
 //TAB selection
-$tabProjets = $bdd->query('SELECT * FROM Projets');
+$reponse = $bdd->query('SELECT * FROM Projets');
 
-//TAB lines counter
-$nbProjects = $bdd->query('SELECT COUNT(*) FROM Projets');
-
-while ($donnees = $tabProjets->fetch())
-{ 
-	return $donneesBase = $donnees;
+while ($donnees = $reponse->fetch())
+{
+    $id = htmlspecialchars($donnees['id']);
+    $title = htmlspecialchars($donnees['title']);
+	$description = htmlspecialchars($donnees['description']);
+	$dateFin = htmlspecialchars($donnees['dateFin']);
 }
 
-while ($donnees = $nbProjects->fetch())
-{ 
-	return $nbRetourner = $donnees;
-}
 
 /*END Controller*/
