@@ -1,12 +1,8 @@
 <?php
+//Affichage de la page
 include('../vue/header.php');
 
-include('../controller/controller.php');
-
-
-
-
-
+include('../controller/dbGetter.php');
 
 while ($donnees = $reponse->fetch())
 {
@@ -14,22 +10,23 @@ while ($donnees = $reponse->fetch())
     $title = htmlspecialchars($donnees['title']);
 	$description = htmlspecialchars($donnees['description']);
 	$dateFin = htmlspecialchars($donnees['dateFin']);
-
 	include('../vue/oneProject.php');
-
-
 }
-
-
-
-
-
-
-
-
 
 include('../vue/newProject.php');
 include('../vue/footer.php');
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
