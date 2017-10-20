@@ -1,8 +1,8 @@
-<article class="col-sm-12">
-    <h2><?php echo("$title"); ?></h2>
-    <p><?php echo("$description"); ?></p>
+<article class="col-sm-12" id="<?php echo('article . $donneesBases['id']'); ?>">
+    <h2><?php echo("$donneesBases['title']"); ?></h2>
+    <p><?php echo("$donneesBases['description']"); ?></p>
     <div class="col-sm-6">
-        <time datetime="2012-12-21"><?php echo("$date"); ?></time>
+        <time datetime="2012-12-21"><?php echo("$donneesBases['dateFin']"); ?></time>
     </div>
     <div class="col-sm-6">
 		<form class="form-inline">
