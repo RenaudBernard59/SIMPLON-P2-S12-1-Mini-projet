@@ -1,8 +1,8 @@
 <?php
 //Affichage de la page
-include('../vue/header.php');
+require('../vue/header.php');
 
-include('../controller/dbGetter.php');
+require('../controller/dbGetter.php');
 
 while ($donnees = $reponse->fetch())
 {
@@ -13,8 +13,8 @@ while ($donnees = $reponse->fetch())
 	include('../vue/oneProject.php');
 }
 
-include('../vue/newProject.php');
-include('../vue/footer.php');
+require('../vue/newProject.php');
+require('../vue/footer.php');
 
 
 
