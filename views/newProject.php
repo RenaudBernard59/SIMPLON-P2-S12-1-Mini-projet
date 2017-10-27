@@ -1,6 +1,6 @@
 <section class="container">
     <h2>Nouveau projet</h2>
-	<form  action="formNewProject.php" method="post">
+	<form  action="../model/formNewProject.php" method="post">
 		<div class="form-group">
 		    <label for="title">Titre du nouveau projet</label>
 		    <input type="text" name="title" id="title" class="form-control" />
@@ -16,3 +16,5 @@
 		<button type="submit" class="btn btn-default">Créer projet</button>
 	</form>
 </section>
+
+

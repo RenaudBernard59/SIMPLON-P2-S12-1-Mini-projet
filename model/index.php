@@ -1,8 +1,8 @@
 <?php
 //Affichage de la page
-require('../vue/header.php');
+require('../views/header.php');
 
-require('../controller/dbGetter.php');
+require('../controllers/dbGetter.php');
 
 while ($donnees = $reponse->fetch())
 {
@@ -10,11 +10,11 @@ while ($donnees = $reponse->fetch())
     $title = htmlspecialchars($donnees['title']);
 	$description = htmlspecialchars($donnees['description']);
 	$dateFin = htmlspecialchars($donnees['dateFin']);
-	include('../vue/oneProject.php');
+	include('../views/oneProject.php');
 }
 
-require('../vue/newProject.php');
-require('../vue/footer.php');
+require('../views/newProject.php');
+require('../views/footer.php');
 
 
 
